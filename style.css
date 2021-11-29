@@ -1,0 +1,175 @@
+/*------ REGOLE GENERALI ------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*------ REGOLE PER L'HEADER ------*/
+.container-main{
+    width: 80%;
+    margin:  10px auto;
+}
+
+.header{
+   
+    height: 100px;
+}
+
+.contain-logo{
+    width: 300px;
+    height: 100px;
+}
+
+#logo{
+    
+    object-fit: cover;
+}
+
+/*------ REGOLE per overlay immagini
+         utilizzare position relative all'elemento padre
+         position absolute alla classe overlay
+         e position relative al contenuto.
+         
+         usare la classe overlay per dare opacità/oscuramento
+         all'immagine------
+
+.overlay{
+    content: "";    ERRORE DA FAR NOTARE AL TUTOR: SENZA CONTENT TUTTO IL TESTO VA IN FONDO CON IL CONTENT VA TUTTO SOPRA
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.contenuto{
+    position: relative;
+}*/
+
+/*------ REGOLE PER IL NAV MENU ------*/
+
+nav{
+    margin: 100px 0px;
+}
+
+.menu li{
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+
+
+/*------ REGOLE PER IL BANNER ------*/
+
+header .banner{
+    
+    height: 300px;
+    margin: 20px 0px;
+    color: white;
+    position: relative;
+}
+
+.text-banner{
+    position: absolute;
+    font-weight: 600;
+    font-size: 30px;
+    bottom: 5%;
+    left: 10% ;
+    
+}
+
+#banner-background{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/*------ REGOLE TITOLO POST BANNER------*/
+
+.title-banner2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/*------ REGOLE PER LA SEZIONE A GRIGLIA ------*/
+
+main{
+   color: black; 
+}
+
+
+
+.head-section{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main .col{
+
+    float: left;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+main .col-left{
+    width: 20%;
+}
+
+.col-middle{
+    width: 60%;
+    padding: 0px 20px;
+}
+
+.internal{
+    height: 100%;
+}
+
+.col-right{
+    width: 20%;
+}
+
+
+
+/*------ REGOLA CLEARFIX PER GESTIRE IL FLEX ------*/
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/*------ REGOLE PER IL FOOTER ------*/
+
+
+footer{
+   
+    height: 100px;
+    margin-top: 20px;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heart{
+    font-size: 45px;
+    color: red;
+}
